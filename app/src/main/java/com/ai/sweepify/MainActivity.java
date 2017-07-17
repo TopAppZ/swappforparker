@@ -1,5 +1,7 @@
 package com.ai.sweepify;
 
+import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -75,9 +77,13 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.cool_down) {
-            // Handle the camera action
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new CoolDownFragment()).commit();
+        }
+        if(id == R.id.memory_optimized){
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new BoostFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

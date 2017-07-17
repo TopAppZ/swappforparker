@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/boost_layout"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:orientation="vertical"
+        android:background="@drawable/boost_bg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Booster Kit"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:paddingTop="20dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="75dp"
+            android:id="@+id/memProgress"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="48dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Memory Optimized"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not Good"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:paddingBottom="30dp"
+            android:id="@+id/result"
+            />
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:background="@drawable/btn_boost"
+            android:layout_gravity="center"
+            android:id="@+id/btnBoost"
+            />
+    </LinearLayout>
+</LinearLayout>

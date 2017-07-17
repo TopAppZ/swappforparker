@@ -6,6 +6,10 @@
                 android:id="@+id/cool_down"
                 android:icon="@drawable/ic_ac_unit_black_24dp"
                 android:title="Cool Down" />
+            <item
+                android:id="@+id/memory_optimized"
+                android:icon="@drawable/ic_ac_unit_black_24dp"
+                android:title="Optimize Memory" />
         </menu>
     </item>
     <item android:title="Share">
